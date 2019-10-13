@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>index</title>
+<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  
+  height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#FFD34E;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFD34E;
+  color: white;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url('D:\\GYM_Management_Application\\Bethany\\img\\out.jpg');
+
+  /* Control the height of the image */
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: 200;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  
+}
+
+/* Add styles to the form container */
+/*.containers {
+  position: absolute;
+  right: 0;
+  margin: 100px;
+  max-width: 300px;
+  padding: 16px;
+  background-color:white;
+}*/
+form {
+  text-align:center; 
+  text-emphasis-color: white;
+  margin:auto;
+  max-width: 400px;
+  padding: 16px;
+ /* background-color :transparent;*/
+ border-radius: 25px;
+  background-color: #27191971;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+ }
+
+
+/* Full-width input fields */
+  input[type=text], input[type=password] ,input[type=date], input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #131010;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: blackd;
+  outline: none;
+  text-emphasis-color:rgb(22, 9, 9);
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(221, 137, 26);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/*.opaque
+{
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}*/
+#container {
+  background-color: #ffffff;
+  padding: 10px 10px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+   
+} 
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="#...">help</a>
+  <a href="index.html">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<!--form-->
+<div class="bg-img">
+<!--<div  style="overflow-y: scroll; height:700px;" >-->
+  <div>
+    <div class="opaque">
+    <form action="/action_page.php" class="containers" >
+      <div class="dance">
+          <font color="white">
+      <h1>Register</h1>
+      
+      <label for="Userame"><b>Userame</b></label>
+      <input type="text" placeholder="Enter Username" name="Userame" required>
+
+      <label for="Name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Name" name="Name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <br>
+    
+      <label for="Phone"><b>Phone Number</b></label>
+      <input type="number" placeholder="Enter 10 Digit Number" name="Phone" required>
+      <br>
+    
+      
+      <label for="Date"><b>Date Of Birth</b></label>
+      <input type="date" id="date" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" placeholder="DD-MM-YYYY"required>
+      <br>
+     
+      
+      <label for="Date"><b>Address</label>
+      <input type="text" placeholder="Enter your Address" name="Address" required>
+    
+      <button type="submit" class="btn">Register</button>
+      </font>
+    </form>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow3.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">
+  Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+  <footer class="" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 footer-copyright">
+            © KMIT  - All rights reserved
+            <div class="credits">
+            </div>
+          </div>
+          <div class="col-sm-5 footer-social">
+            <div class="pull-right hidden-xs hidden-sm">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!--footer-->
+
+</body>
+</html>
+
+
+
+
