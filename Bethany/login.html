@@ -88,7 +88,7 @@ form {
 
 
 /* Full-width input fields */
-  input[type=text], input[type=password] ,input[type=date], input[type=number]{
+  input[type=text], input[type=password] ,input[type=date], input[type=number],select[name=option] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -114,7 +114,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .btn:hover {
-  opacity: 1;
+  opacity: 5;
 }
 .opaque
 {
@@ -123,6 +123,11 @@ input[type=text]:focus, input[type=password]:focus {
   filter: alpha(opacity=60);*/
   box-sizing:border-box;
 }
+footer {
+    clear: both;
+    position: relative;
+    margin-top: 300px;
+}
 
 </style>
 </head>
@@ -130,7 +135,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 <div class="topnav">
   <a class="active" href="index.html">Home</a>
-  <a href="#...">help</a>
+  <a href="#...">Help</a>
   <a href="index.html">Contact</a>
   <a href="#about">About</a>
 </div>
@@ -140,20 +145,27 @@ input[type=text]:focus, input[type=password]:focus {
 <!--<div  style="overflow-y: scroll; height:700px;" >-->
   <div>
     <div class="opaque">
+      
     <form action="/action_page.php" class="containers" >
+
       <div class="dance">
           <font color="white">
       <h1 style="text-align: center;">Login</h1>
       <label for="Userame"><b>Userame</b></label>
       <input type="text" placeholder="Enter Username" name="Userame" required>
 
-
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
+      <label for="Actor"><b>Actor</b></label><br>
+      <select title="none" name="option"  >
+           <option value="Client">Client</option>
+           <option value="Trainer">Trainer</option>
+           <option value="Admin">Admin</option>
+   </select>
       <br>
-    
-      <button type="submit" class="btn">Sign in</button>
+      <button type="submit" class="btn"><b>Sign in</b></button>
+      <br>
       </font>
     </form>
     </div>
@@ -186,7 +198,7 @@ var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadedurati
       </div>
     </footer>
   
-</div>
+
 
 <!--footer-->
 
